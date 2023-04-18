@@ -35,6 +35,7 @@ try {
                             <th>Name</th>
                             <th>Price</th>
                             <th>Category</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -55,6 +56,7 @@ try {
                                     <td><?= $row->name; ?></td>
                                     <td><?= $row->price; ?></td>
                                     <td><?= $row->category; ?></td>
+                                    <td><a class="edit" href="#">EDIT</a> / <a href="#" class="delete">DELETE</a></td>
                                 </tr>
                                 <?php
                             }
@@ -77,6 +79,22 @@ try {
 </div>
 
 
-
+<style>
+    a {
+        text-decoration: none;
+    }
+    .edit {
+        background-color: dodgerblue;
+        padding: 5px;
+        color: white;
+        border-radius: 3px;
+    }
+    .delete {
+        background-color: crimson;
+        padding: 5px;
+        color: white;
+        border-radius: 3px;
+    }
+</style>
 
 
