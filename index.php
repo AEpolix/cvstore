@@ -8,6 +8,8 @@
     <title>CVICENIE STORE GIT</title>
 </head>
 <body>
-
+<?php
+    require_once("products_list.php");
+?>
 </body>
 </html>
