@@ -40,7 +40,7 @@ try {
                         <tbody>
                         <?php
 
-                        $query = "SELECT * FROM cvstore ORDER BY DECS";
+                        $query = "SELECT * FROM products";
                         $statement = $connect->prepare($query);
                         $statement->execute();
                         $statement->setFetchMode(PDO::FETCH_OBJ); //PDO::FETCH_ASSOC
